@@ -6,41 +6,25 @@ import seaborn as sns
 from pathlib import Path
 import pandas as pd
 import streamlit as st
-import plotly.express as px
+#import plotly.express as px
+
 
 @st.cache
 def get_data():
-    return pd.read_csv("https://github.com/BaptisteHurel/Python/blob/master/CSV/player_data.csv")
+   bikes_data_path = Path() / 'Seasons_Stats.csv'
+   data = pd.read_csv(bikes_data_path)
 
 df = get_data()
 st.write(df)
 
-
 st.title("Streamlit NBA datas")
 st.header("Différentes infos")
-st.button("Simple Button")
-st.text("Une check box")
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-if st.checkbox("Show DataSet"):
-    number = st.number_input("Number of Rows to View")
-    st.dataframe(df.head(int(number)))
-
-
-if st.button("Columns Names"):
+if st.checkbox("Afficher Dataset"):
+    nbligne = st.number_input("Nombre de ligne à afficher", step=1)
+    st.dataframe(df.head(int(nbligne)))
+    print (df)
+    
+if st.button("Nom de colonnes"):
     st.write(df.columns.tolist())
+    st.table(df.dtypes)
