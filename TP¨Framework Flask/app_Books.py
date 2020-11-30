@@ -32,6 +32,6 @@ book=[
 @app.route('/api/books', methods=["GET"])
 def index():
     response = get_a_response()
-    return book
+    return response
 
 
