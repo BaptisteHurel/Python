@@ -1,16 +1,19 @@
 # Couche OS / Définition de l'image utilisée
-FROM python:3
+FROM python:3.6-slim
 
-WORKDIR /Documents/docker/app
+WORKDIR /user/src/app
 
 COPY requirements.txt ./
 
 #Execution d'une commande dans le conteneur
-RUN apt-get update && apt-get install -y
-RUN apt-get install python3
-RUN apt-get install python3-pip3
-RUN apt-get install vim
+RUN apt-get update && apt-get install -y \
+    python3 \
+    python3-pip3 \
+    vim \
+RUN pip install -r requirement.txt
 
+COPY . .
 
+EXPOSE 300
 
-RUN npm install
+CMD ["python","./app/Helloworld.py"]
