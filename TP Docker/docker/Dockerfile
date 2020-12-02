@@ -16,4 +16,4 @@ COPY . .
 
 EXPOSE 300
 
-CMD ["python","./app/Helloworld.py"]
+CMD ["python","./app/app.py"]
