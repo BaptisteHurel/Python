@@ -1,3 +1,10 @@
+import pandas as pds
+from sklearn.model_selection import train_test_split
+import numpy as np
+from sklearn.linear_model import LinearRegression
+from joblib import dump, load
+import datetime
+
 # class DataHandler
 class DataHandler:
     """
@@ -92,14 +99,19 @@ class FeatureRecipe:
     
     def get_duplicates(self):
         print("Get duplicates")
-        
-        for col in self.df.columns:
-            for row in range(self.df.shape[0]):
+        drop_col = []
+        for col_index in range(self.df.shape[1]):
+            for second_col_index in range(col_index+1,self.df.shape[1]):
+                if self.df.iloc[:,col_index].equals(self.df.iloc[:,second_col_index]):
+                    drop_col.append(self.df.iloc[:,second_col_index].name)
+        print("Drop col : {}".format(drop_col))
+        return drop_col
                         
-    def deal_dtime(self):
-        pass
+    #def deal_dtime(self):
+    #    pass
     
     def prepare_data(self, threshold: float):
+        """Call all methods"""
         self.drop_uselessf()
         self.separate_variable_types()
         self.deal_duplicate()
@@ -119,9 +131,30 @@ class FeatureExtractor:
         self.X_train, self.X_test, self.y_train, self.y_test = None,None,None,None
         self.df = data
         self.flist = flist
+
+    def extract(self):
+        print("Extraction start...")
+        for col in self.df.columns:
+            if col not in self.flist:
+                self.df.drop(col, axis=1, inplace=True)
+        print("Extraction end...\n")
+        print(self.df)
         
-    def splitting(size:float,rng:int,X pd.Series):
-        self.X_train, self.X_test, self.y_train, self.y_test train_test_split(X, y, size, rng)
+    def splitting(self, size_test:float, rnge:int, target:str):
+        """
+        Args:
+            size_test (float): Proportion of data to be used when test split 
+            rnge (int): Controls the shuffling applied to the data before applying the split
+            target (str): The target
+
+        Return:
+            tuple: X_train, X_test, y_train, y_test 
+        """
+        print("Start Splitting ")
+        print(self.df.loc[:,self.df.columns != target])
+        self.X_train, self.X_test, self.y_train, self.y_test = train_test_split(self.df.loc[:,self.df.columns != target], self.df[target], test_size=size_test, random_state=rnge)
+        print("End\n ")
+        return self.X_train, self.X_test, self.y_train, self.y_test
         
     def train():
         pass
@@ -133,16 +166,49 @@ class ModelBuilder:
     """
     def __init__(self, model_path: str = None, save: bool = None):
         pass
+
     def __repr__(self):
-        pass
+        return "Path : {} , Regression : {}".format(self.path, self.reg)
+
+    def train(self, X, Y):
+        """
+        Args:
+            X (matrix): Training data
+            Y (matrix): Target values
+        """
+        self.reg.fit(X, Y)
+
     def predict(self, X) -> np.ndarray:
-        pass
+        """
+        Args:
+            X (matrix): Samples
+        Return:
+            np.ndarray: Predict values
+        """
+        return self.reg.predict(X)
+
     def save_model(self, path:str):
         #with the format : 'model_{}_{}'.format(date)
-        pass
+        dump(self.reg, "{}/model.joblib".format(self.path))
+        print("Dump done successfully")
+
+    def print_accuracy(self, X_test, y_test):
+        """
+        Args:
+            X_test (matrix): Trained test features
+            y_test (matrix): Trained test target
+        """
+        print("Coefficient accurancy : {} %".format(self.reg.score(X_test, y_test)*100)) 
+
     def load_model(self):
+        """
+        Return:
+        model : Model
+        """
         try:
             #load model
-            pass
+            return load("{}/model.joblib".format(self.path))
         except:
-            pass
+            print("File doesn't exist.")
+
+#END

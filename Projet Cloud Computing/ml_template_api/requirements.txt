@@ -5,3 +5,4 @@ streamlit
 gunicorn
 joblib
 fastapi
+pylint
