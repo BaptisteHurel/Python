@@ -22,7 +22,7 @@
 
 `$ heroku login -i`
 
-`$ cd ~/Projet Docker Architecture`
+`$ cd ./Projet Docker Architecture`
 
 `$ heroku create`
 
