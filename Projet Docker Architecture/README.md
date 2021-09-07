@@ -15,9 +15,11 @@
 
 ### 2.1 Lancement Docker
 Creation de l'image Docker à partir du Dockerfile
+
 `$ docker build -t py-project-docker .`
 
 Vérification des images 
+
 `$ sudo docker images`
 ![images docker](https://user-images.githubusercontent.com/58144828/132416563-be6ef7b3-fc8f-49dc-a04b-b6ed881a0f5f.PNG)
 
