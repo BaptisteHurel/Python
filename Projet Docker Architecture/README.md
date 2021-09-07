@@ -13,20 +13,16 @@
 ## 1.2. Fonctionnalités
 ### 1.2.1. Lancement Docker
 ### 1.2.2. Déploiement sur Heroku
-#### Installation et configuration de Heroku
+#### 1.2.2.1 Installation et configuration de Heroku
 
-$sudo snap install --classic heroku 
-
-$heroku --version
-
+$ sudo snap install --classic heroku 
+$ heroku --version
 $ heroku login
-
 $ heroku login -i
-
 $ cd ~/myapp
 $ heroku create
 
-#### Lien de l'application
+#### 1.2.2.2 Lien de l'application
 https://projet-docker-architecture.herokuapp.com/
 
 ### 1.2.3. Chemins application flask
