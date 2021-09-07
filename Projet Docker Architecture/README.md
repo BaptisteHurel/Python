@@ -14,4 +14,5 @@
 ### 1.2.1. Lancement Docker
 ### 1.2.2. Déploiement sur Heroku
 
-### 1.2.3. Chemins application flaskg
+### 1.2.3. Chemins application flask
+
