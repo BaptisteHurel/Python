@@ -5,7 +5,7 @@
     - [1.2.2. Déploiement sur Heroku](#122-déploiement-sur-heroku)
     - [1.2.3. Chemins application flaskg](#123-chemins-application-flaskg)
 
-
+-----------------------------------------------------------------------------
 # Projet Docker Architecture
 
 ## 1.1. Lancement du projet
