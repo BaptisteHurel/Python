@@ -13,6 +13,19 @@
 ## 1.2. Fonctionnalités
 ### 1.2.1. Lancement Docker
 ### 1.2.2. Déploiement sur Heroku
+#### Installation et configuration de Heroku
+
+$sudo snap install --classic heroku 
+
+$heroku --version
+
+$ heroku login
+
+$ heroku login -i
+
+$ cd ~/myapp
+$ heroku create
+
 #### Lien de l'application
 https://projet-docker-architecture.herokuapp.com/
 
