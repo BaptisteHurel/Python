@@ -13,6 +13,8 @@
 ## 1.2. Fonctionnalités
 ### 1.2.1. Lancement Docker
 ### 1.2.2. Déploiement sur Heroku
+#### Lien de l'application
+https://projet-docker-architecture.herokuapp.com/
 
 ### 1.2.3. Chemins application flask
 
