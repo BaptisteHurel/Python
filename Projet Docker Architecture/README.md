@@ -16,11 +16,17 @@
 #### 1.2.2.1 Installation et configuration de Heroku
 
 $ sudo snap install --classic heroku 
+
 $ heroku --version
+
 $ heroku login
+
 $ heroku login -i
+
 $ cd ~/myapp
+
 $ heroku create
+
 
 #### 1.2.2.2 Lien de l'application
 https://projet-docker-architecture.herokuapp.com/
