@@ -23,7 +23,7 @@ $ heroku login
 
 $ heroku login -i
 
-$ cd ~/myapp
+$ cd ~/Projet Docker Architecture
 
 $ heroku create
 
