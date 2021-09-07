@@ -1,19 +1,24 @@
 - [Projet Docker Architecture](#projet-docker-architecture)
-  - [1.1. Lancement du projet](#11-lancement-du-projet)
-  - [1.2. Fonctionnalités](#12-fonctionnalités)
-    - [1.2.1. Lancement Docker](#121-lancement-docker)
-    - [1.2.2. Déploiement sur Heroku](#122-déploiement-sur-heroku)
-      - [1.2.2.1 Installation et configuration de Heroku](#1221-installation-et-configuration-de-heroku)
-      - [1.2.2.2 Lien de l'application](#1222-lien-de-lapplication)
-    - [1.2.3. Chemins application flask](#123-chemins-application-flask)
-
+  - [1 Lancement du projet](#1-lancement-du-projet)
+  - [2 Fonctionnalités](#2-fonctionnalités)
+    - [2.1 Lancement Docker](#21-lancement-docker)
+    - [2.2 Déploiement sur Heroku](#22-déploiement-sur-heroku)
+      - [2.2.1 Installation et configuration de Heroku](#221-installation-et-configuration-de-heroku)
+      - [2.2.2 Lien de l'application](#222-lien-de-lapplication)
+    - [2.3 Chemins application flask](#23-chemins-application-flask)
 
 # Projet Docker Architecture
-## 1.1. Lancement du projet
-## 1.2. Fonctionnalités
-### 1.2.1. Lancement Docker
-### 1.2.2. Déploiement sur Heroku
-#### 1.2.2.1 Installation et configuration de Heroku
+
+## 1 Lancement du projet
+
+## 2 Fonctionnalités
+
+### 2.1 Lancement Docker
+
+### 2.2 Déploiement sur Heroku
+
+#### 2.2.1 Installation et configuration de Heroku
+
 `$ sudo snap install --classic heroku`
 
 `$ heroku --version`
@@ -26,7 +31,8 @@
 
 `$ heroku create`
 
-#### 1.2.2.2 Lien de l'application
-https://projet-docker-architecture.herokuapp.com/
+#### 2.2.2 Lien de l'application
 
-### 1.2.3. Chemins application flask
+<https://projet-docker-architecture.herokuapp.com/>
+
+### 2.3 Chemins application flask
