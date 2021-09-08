@@ -11,17 +11,38 @@
 
 ## 1 Lancement du projet
 
+
 ## 2 Fonctionnalités
 
 ### 2.1 Lancement Docker
+
 Creation de l'image Docker à partir du Dockerfile
 
-`$ docker build -t py-project-docker .`
+`$ sudo docker build -t py-app-projet-docker .`
 
-Vérification des images 
+Vérification des images
 
 `$ sudo docker images`
-![images docker](https://user-images.githubusercontent.com/58144828/132416563-be6ef7b3-fc8f-49dc-a04b-b6ed881a0f5f.PNG)
+
+Ajout de l'image dans un conteneur
+
+`$ sudo docker run 0f615f28df5c`
+`$ sudo docker build -t 0f615f28df5c .`
+`$ sudo docker run -d -p 5000:5000 455dd8c21be0`
+#### (9523c8323810b63533e3837e42592bb6666e2c49f6d3d8c71555ab83d07a46fa)
+
+Vérification des conteneurs 
+
+`$ sudo docker ps`
+
+#### 2.1.2  Docker Swarm Rocks
+`$ sudo docker swarm init`
+
+`$ sudo docker node ls`
+
+#### 2.1.2  Traefik Proxy
+`$ docker network create --driver=overlay traefik-public`
+
 
 ### 2.2 Déploiement sur Heroku
 
@@ -39,8 +60,15 @@ Vérification des images
 
 `$ heroku create`
 
-#### 2.2.2 Lien de l'application
+#### 2.2.2 Lien de l'application sur Heroku
 
 <https://projet-docker-architecture.herokuapp.com/>
 
+
 ### 2.3 Chemins application flask
+
+LOCALHOST : http://0.0.0.0:5000/ ou http://172.17.0.2:5000/
+`$ cd ./Documents/'Projet Docker Architecture'/ml_template_api/docker`
+`$ python app.py`
+
+HEROKU : https://projet-docker-architecture.herokuapp.com/
