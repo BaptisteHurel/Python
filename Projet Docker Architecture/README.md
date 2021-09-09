@@ -105,7 +105,7 @@ HEROKU : https://projet-docker-architecture.herokuapp.com/
 MYSQL Database
 ```
 +-----------------------+
-| Tables_in_Players |
+| Table Players         |
 +-----------------------+
 | Player                |
 | height                |
