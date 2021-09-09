@@ -1,4 +1,4 @@
-# Projet Docker Architecture
+# [center] Projet Docker Architecture [/center]
 - [Projet Docker Architecture](#projet-docker-architecture)
   - [1 Présentation du projet](#1-présentation-du-projet)
     - [1.1 Description](#11-description)
