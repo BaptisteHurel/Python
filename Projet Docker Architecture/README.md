@@ -12,7 +12,7 @@
 ## 1 Présentation du projet
 ### 1.1 Description
 Ce projet est une application Flask avec un accès à une base de donnée, elle permet d'afficher les statistiques de matchs de basket de NBA.
-Cette application est déploié sur Heroku pour être accesible en ligne.
+Cette application est déployée sur Heroku pour être accesible en ligne.
 
 ### 1.2 Architecture fonctionnelle
 
@@ -30,6 +30,7 @@ Creation de l'image Docker à partir du Dockerfile
 Vérification des images
 
 `$ sudo docker images`
+![images docker](https://user-images.githubusercontent.com/58144828/132645427-fbe84cfa-8607-4959-b43e-12175eabb5c3.PNG)
 
 Ajout de l'image dans un conteneur
 
