@@ -93,6 +93,7 @@ Vérification des conteneurs
 
 LOCALHOST : http://0.0.0.0:5000/ ou http://172.17.0.2:5000/
 `$ cd ./Documents/'Projet Docker Architecture'/ml_template_api/docker`
+
 `$ python app.py`
 
 HEROKU : https://projet-docker-architecture.herokuapp.com/
