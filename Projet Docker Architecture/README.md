@@ -9,8 +9,10 @@
 
 # Projet Docker Architecture
 
-## 1 Description du projet
-
+## 1 Présentation du projet
+### 1.1 Description
+### 1.2 Architecture fonctionnelle
+### 1.3 : Lancement du projet
 
 ## 2 Fonctionnalités
 
