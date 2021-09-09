@@ -1,4 +1,4 @@
-# [center] Projet Docker Architecture [/center]
+# Projet Docker Architecture
 - [Projet Docker Architecture](#projet-docker-architecture)
   - [1 Présentation du projet](#1-présentation-du-projet)
     - [1.1 Description](#11-description)
@@ -24,7 +24,7 @@ Lien sur Heroku : https://projet-docker-architecture.herokuapp.com/
 ## 2 Fonctionnalités
 
 ### 2.1 Lancement Docker
-
+#### 2.1.1 Images et Conteneur
 Creation de l'image Docker à partir du Dockerfile
 
 `$ sudo docker build -t py-app-projet-docker .`
