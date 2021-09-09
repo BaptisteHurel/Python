@@ -29,8 +29,11 @@ Vérification des images
 Ajout de l'image dans un conteneur
 
 `$ sudo docker run 0f615f28df5c`
+
 `$ sudo docker build -t 0f615f28df5c .`
+
 `$ sudo docker run -d -p 5000:5000 455dd8c21be0`
+
 #### (9523c8323810b63533e3837e42592bb6666e2c49f6d3d8c71555ab83d07a46fa)
 
 Vérification des conteneurs 
