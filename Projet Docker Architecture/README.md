@@ -6,9 +6,12 @@
     - [1.3 Lancement du projet](#13-lancement-du-projet)
   - [2 Fonctionnalités](#2-fonctionnalités)
     - [2.1 Lancement Docker](#21-lancement-docker)
+      - [2.1.1 Images et Conteneurs] (#211-images-et-conteneurs)
+      - [2.1.2 Docker Swarm Rocks] (#211-docker-swarm-rocks)
+      - [2.1.3 Traefik Proxy] (#213-traefik-proxy)
     - [2.2 Déploiement sur Heroku](#22-déploiement-sur-heroku)
       - [2.2.1 Installation et configuration de Heroku](#221-installation-et-configuration-de-heroku)
-      - [2.2.2 Lien de l'application](#222-lien-de-lapplication)
+      - [2.2.2 Lien de l'application sur Heroku](#222-lien-de-lapplication-sur-heroku)
     - [2.3 Chemins application flask](#23-chemins-application-flask)
 ------------------------------------------------------------------------------------------------------------
 ## 1 Présentation du projet
@@ -24,7 +27,7 @@ Lien sur Heroku : https://projet-docker-architecture.herokuapp.com/
 ## 2 Fonctionnalités
 
 ### 2.1 Lancement Docker
-#### 2.1.1 Images et Conteneur
+#### 2.1.1 Images et Conteneurs
 Creation de l'image Docker à partir du Dockerfile
 
 `$ sudo docker build -t py-app-projet-docker .`
@@ -55,7 +58,7 @@ Vérification des conteneurs
 `$ sudo docker node ls`
 ![docker node ls](https://user-images.githubusercontent.com/58144828/132645994-109b181f-2ca7-437a-b8e5-21342cb447d3.PNG)
 
-#### 2.1.2  Traefik Proxy
+#### 2.1.3  Traefik Proxy
 `$ docker network create --driver=overlay traefik-public`
 ![network traefik](https://user-images.githubusercontent.com/58144828/132645505-38e7e0b4-1c8b-41e9-be50-173fb2958485.PNG)
 
