@@ -100,6 +100,7 @@ HEROKU : https://projet-docker-architecture.herokuapp.com/
 
 ### 2.4 Base de donnée mysql
 MYSQL Database
+```
 +-----------------------+
 | Tables_in_Players |
 +-----------------------+
@@ -111,4 +112,4 @@ MYSQL Database
 | birth_city            |
 | birth_state           |
 +-----------------------+
-
+```
