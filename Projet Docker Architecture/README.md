@@ -18,8 +18,8 @@
 ------------------------------------------------------------------------------------------------------------
 ## 1 Présentation du projet
 ### 1.1 Description
-Ce projet est une application Flask avec un accès à une base de donnée, elle permet d'afficher les statistiques de matchs de basket de NBA.
-Cette application est déployée sur Heroku pour être accesible en ligne et containerisée avec Docker pour assurer .
+Ce projet est une **application Flask** avec un accès à une **base de donnée MySQL**, elle permet d'afficher les statistiques de matchs de basket de NBA.
+Cette application est déployée sur **Heroku** pour être accesible en ligne et **containerisée avec Docker**.
 
 ### 1.2 Schéma Architecture fonctionnelle
 
