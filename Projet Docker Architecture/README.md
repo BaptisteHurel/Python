@@ -97,3 +97,18 @@ LOCALHOST : http://0.0.0.0:5000/ ou http://172.17.0.2:5000/
 `$ python app.py`
 
 HEROKU : https://projet-docker-architecture.herokuapp.com/
+
+### 2.4 Base de donnée mysql
+MYSQL Database
++-----------------------+
+| Tables_in_Players |
++-----------------------+
+| Player                |
+| height                |
+| weight                |
+| collage               |
+| born                  |
+| birth_city            |
+| birth_state           |
++-----------------------+
+
