@@ -21,6 +21,9 @@ Cette application est déployée sur Heroku pour être accesible en ligne et con
 
 ### 1.2 Schéma Architecture fonctionnelle
 
+![image](https://user-images.githubusercontent.com/58144828/132656422-a4dd070a-6ee2-416c-8ead-398940cc84f4.png)
+
+
 ### 1.3 : Lancement du projet
 Lien sur Heroku : https://projet-docker-architecture.herokuapp.com/
 
