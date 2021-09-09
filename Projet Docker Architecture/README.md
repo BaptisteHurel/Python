@@ -13,6 +13,8 @@
       - [2.2.1 Installation et configuration de Heroku](#221-installation-et-configuration-de-heroku)
       - [2.2.2 Lien de l'application sur Heroku](#222-lien-de-lapplication-sur-heroku)
     - [2.3 Chemins application flask](#23-chemins-application-flask)
+    - [2.4 Base de donnée MySQL](#24-base-de-donnée-mysql)
+
 ------------------------------------------------------------------------------------------------------------
 ## 1 Présentation du projet
 ### 1.1 Description
@@ -92,13 +94,14 @@ Vérification des conteneurs
 ### 2.3 Chemins application flask
 
 LOCALHOST : http://0.0.0.0:5000/ ou http://172.17.0.2:5000/
+
 `$ cd ./Documents/'Projet Docker Architecture'/ml_template_api/docker`
 
 `$ python app.py`
 
 HEROKU : https://projet-docker-architecture.herokuapp.com/
 
-### 2.4 Base de donnée mysql
+### 2.4 Base de donnée MySQL
 MYSQL Database
 ```
 +-----------------------+
