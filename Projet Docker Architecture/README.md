@@ -9,7 +9,7 @@
 
 # Projet Docker Architecture
 
-## 1 Lancement du projet
+## 1 Description du projet
 
 
 ## 2 Fonctionnalités
