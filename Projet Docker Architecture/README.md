@@ -45,14 +45,17 @@ Ajout de l'image dans un conteneur
 Vérification des conteneurs 
 
 `$ sudo docker ps`
+![conteneurs docker](https://user-images.githubusercontent.com/58144828/132645736-ce2c7d88-c4ec-4948-ba90-b0eb9d783db2.PNG)
 
 #### 2.1.2  Docker Swarm Rocks
 `$ sudo docker swarm init`
 
 `$ sudo docker node ls`
+![docker node ls](https://user-images.githubusercontent.com/58144828/132645994-109b181f-2ca7-437a-b8e5-21342cb447d3.PNG)
 
 #### 2.1.2  Traefik Proxy
 `$ docker network create --driver=overlay traefik-public`
+![network traefik](https://user-images.githubusercontent.com/58144828/132645505-38e7e0b4-1c8b-41e9-be50-173fb2958485.PNG)
 
 
 ### 2.2 Déploiement sur Heroku
@@ -64,12 +67,14 @@ Vérification des conteneurs
 `$ heroku --version`
 
 `$ heroku login`
+![heroku login](https://user-images.githubusercontent.com/58144828/132645791-3b250a20-6a9a-40e4-b530-b862168afd14.PNG)
 
 `$ heroku login -i`
 
 `$ cd ./Projet Docker Architecture`
 
 `$ heroku create`
+![heroku create](https://user-images.githubusercontent.com/58144828/132645810-01d08f89-8852-4bd7-a949-740c1eaea513.PNG)
 
 #### 2.2.2 Lien de l'application sur Heroku
 
