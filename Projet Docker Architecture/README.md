@@ -2,7 +2,7 @@
 - [Projet Docker Architecture](#projet-docker-architecture)
   - [1 Présentation du projet](#1-présentation-du-projet)
     - [1.1 Description](#11-description)
-    - [1.2 Architecture Fonctionnelle](#12-architecture-fonctionnelle)
+    - [1.2 Schéma Architecture Fonctionnelle](#12-schéma-architecture-fonctionnelle)
     - [1.3 Lancement du projet](#13-lancement-du-projet)
   - [2 Fonctionnalités](#2-fonctionnalités)
     - [2.1 Lancement Docker](#21-lancement-docker)
@@ -17,9 +17,9 @@
 ## 1 Présentation du projet
 ### 1.1 Description
 Ce projet est une application Flask avec un accès à une base de donnée, elle permet d'afficher les statistiques de matchs de basket de NBA.
-Cette application est déployée sur Heroku pour être accesible en ligne.
+Cette application est déployée sur Heroku pour être accesible en ligne et containerisée avec Docker pour assurer .
 
-### 1.2 Architecture fonctionnelle
+### 1.2 Schéma Architecture fonctionnelle
 
 ### 1.3 : Lancement du projet
 Lien sur Heroku : https://projet-docker-architecture.herokuapp.com/
