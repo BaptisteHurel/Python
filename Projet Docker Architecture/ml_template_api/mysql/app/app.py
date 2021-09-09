@@ -27,7 +27,7 @@ connection_str = f'mysql+pymysql://{db_user}:{db_pwd}@{db_host}:{db_port}/{db_na
 # connect to database
 engine = create_engine(connection_str)
 connection = engine.connect()
-logging.info(' - - - ✅ MySQL Docker Container Python connection ok - - - \n')
+logging.info(' - - -  MySQL Docker Container Python connection ok - - - \n')
 
 metadata = MetaData(bind=engine)
 metadata.reflect(only=['customers','employees','offices', 'orderdetails','orders','payments','productlines','products'])
@@ -38,11 +38,11 @@ Base = automap_base(metadata=metadata)
 Base.prepare()
 payments = Base.classes.payments
 
-logging.info('\n - - - ✅ [Tables] Payments | Data Mapping OK - - - \n')
+logging.info('\n - - - [Tables] Payments | Data Mapping OK - - - \n')
 
 def print_table() -> List:
     tab=[]
-    logging.info(' - - - ✅ Tables into database - - - \n')
+    logging.info(' - - - Tables into database - - - \n')
     for t in metadata.sorted_tables:
         print("\t\t - {}".format(t.name))
         tab.append(t.name)
