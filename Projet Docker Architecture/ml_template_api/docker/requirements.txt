@@ -1,2 +1,5 @@
 Flask
-redis
+Flask-SQLAlchemy
+SQLAlchemy
+PyMySQL
+pytest
