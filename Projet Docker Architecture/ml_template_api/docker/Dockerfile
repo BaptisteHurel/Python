@@ -1,8 +1,8 @@
-FROM alpine:3
-WORKDIR /usr/src/app
-RUN apk update && apk add python3 &&\
-        apk add py3-pip && apk add vim
-COPY . .
-RUN pip3 install -r requirements.txt
+FROM python:3.6
 EXPOSE 5000
-CMD ["python3", "./app.py"]
+WORKDIR /app
+COPY requirements.txt /app
+RUN pip install -r requirements.txt
+COPY app.py /app
+ENTRYPOINT ["/docker-entrypoint-initdb.sh"]
+CMD python app.py
