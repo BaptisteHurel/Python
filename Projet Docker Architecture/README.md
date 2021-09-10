@@ -35,32 +35,32 @@ Lien sur Heroku : https://projet-docker-architecture.herokuapp.com/
 #### 2.1.1 Images et Conteneurs
 Creation de l'image Docker à partir du Dockerfile
 
-`$ sudo docker build -t py-app-projet-docker .`
+`$ docker build -t py-app-projet-docker .`
 
 Vérification des images
 
-`$ sudo docker images`
+`$ docker images`
 ![images docker](https://user-images.githubusercontent.com/58144828/132645427-fbe84cfa-8607-4959-b43e-12175eabb5c3.PNG)
 
 Ajout de l'image dans un conteneur
 
-`$ sudo docker run 0f615f28df5c`
+`$ docker run 0f615f28df5c`
 
-`$ sudo docker build -t 0f615f28df5c .`
+`$ docker build -t 0f615f28df5c .`
 
-`$ sudo docker run -d -p 5000:5000 455dd8c21be0`
+`$ docker run -d -p 5000:5000 455dd8c21be0`
 
 #### (9523c8323810b63533e3837e42592bb6666e2c49f6d3d8c71555ab83d07a46fa)
 
 Vérification des conteneurs 
 
-`$ sudo docker ps`
+`$ docker ps`
 ![conteneurs docker](https://user-images.githubusercontent.com/58144828/132645736-ce2c7d88-c4ec-4948-ba90-b0eb9d783db2.PNG)
 
 #### 2.1.2  Docker Swarm Rocks
-`$ sudo docker swarm init`
+`$ docker swarm init`
 
-`$ sudo docker node ls`
+`$ docker node ls`
 ![docker node ls](https://user-images.githubusercontent.com/58144828/132645994-109b181f-2ca7-437a-b8e5-21342cb447d3.PNG)
 
 #### 2.1.3  Traefik Proxy
@@ -72,7 +72,7 @@ Vérification des conteneurs
 
 #### 2.2.1 Installation et configuration de Heroku
 
-`$ sudo snap install --classic heroku`
+`$ snap install --classic heroku`
 
 `$ heroku --version`
 
