@@ -123,4 +123,14 @@ MYSQL Database
 | birth_city            |
 | birth_state           |
 +-----------------------+
+
++-----------+------------------+
+| host      | user             |
++-----------+------------------+
+| %         | root             |
+| localhost | mysql.infoschema |
+| localhost | mysql.session    |
+| localhost | mysql.sys        |
+| localhost | root             |
++-----------+------------------+
 ```
