@@ -58,12 +58,18 @@ Vérification des conteneurs
 ![conteneurs docker](https://user-images.githubusercontent.com/58144828/132645736-ce2c7d88-c4ec-4948-ba90-b0eb9d783db2.PNG)
 
 #### 2.1.2  Docker Swarm Rocks
+
+Procédure à suivre : <https://dockerswarm.rocks/>
+
 `$ docker swarm init`
 
 `$ docker node ls`
 ![docker node ls](https://user-images.githubusercontent.com/58144828/132645994-109b181f-2ca7-437a-b8e5-21342cb447d3.PNG)
 
 #### 2.1.3  Traefik Proxy
+
+Procédure à suivre : <https://dockerswarm.rocks/traefik/>
+
 `$ docker network create --driver=overlay traefik-public`
 ![network traefik](https://user-images.githubusercontent.com/58144828/132645505-38e7e0b4-1c8b-41e9-be50-173fb2958485.PNG)
 
