@@ -37,6 +37,8 @@ Creation de l'image Docker à partir du Dockerfile
 
 `$ docker build -t py-app-projet-docker .`
 
+`$ docker build -t app-docker-project .`
+
 Vérification des images
 
 `$ docker images`
