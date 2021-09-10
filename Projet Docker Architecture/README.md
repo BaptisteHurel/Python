@@ -41,6 +41,8 @@ Vérification des images
 
 `$ docker images`
 ![images docker](https://user-images.githubusercontent.com/58144828/132645427-fbe84cfa-8607-4959-b43e-12175eabb5c3.PNG)
+![image](https://user-images.githubusercontent.com/58144828/132826630-22a86858-dd07-48bf-9434-d9bbf353b762.png)
+
 
 Ajout de l'image dans un conteneur
 
