@@ -141,3 +141,6 @@ MYSQL Database
 **Test d'accès aux données de la base donnée**
 
 ![image](https://user-images.githubusercontent.com/58144828/132832185-a0b28bc0-1ea8-4b9f-98c4-d1c46d0dc04d.png)
+
+### 2.4 Fichier de test
+
