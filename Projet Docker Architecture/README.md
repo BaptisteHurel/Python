@@ -144,3 +144,6 @@ MYSQL Database
 
 ### 2.4 Fichier de test
 
+#### 2.4.1 Ajout dans le fichier docker-compose.yml
+
+![image](https://user-images.githubusercontent.com/58144828/135060159-487aca49-e41d-43d3-b63d-50d4b7e59263.png)
