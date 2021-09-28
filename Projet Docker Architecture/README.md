@@ -15,6 +15,7 @@
     - [2.3 Chemins application flask](#23-chemins-application-flask)
     - [2.4 Base de donnée MySQL](#24-base-de-donnée-mysql)
     - [2.5 Fichier de test](#24-fichier-de-test)
+      - [2.5.1 Ajout dans le fichier docker-compose.yml](#221-ajout-dans-le-fichier-docker-compose.yml)
 
 ------------------------------------------------------------------------------------------------------------
 ## 1 Présentation du projet
