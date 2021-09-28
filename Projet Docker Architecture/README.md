@@ -14,6 +14,7 @@
       - [2.2.2 Lien de l'application sur Heroku](#222-lien-de-lapplication-sur-heroku)
     - [2.3 Chemins application flask](#23-chemins-application-flask)
     - [2.4 Base de donnée MySQL](#24-base-de-donnée-mysql)
+    - [2.5 Fichier de test](#24-fichier-de-test)
 
 ------------------------------------------------------------------------------------------------------------
 ## 1 Présentation du projet
