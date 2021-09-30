@@ -56,7 +56,7 @@ Ajout de l'image dans un conteneur
 
 `$ docker run -d -p 5000:5000 455dd8c21be0`
 
-#### (9523c8323810b63533e3837e42592bb6666e2c49f6d3d8c71555ab83d07a46fa)
+9523c8323810b63533e3837e42592bb6666e2c49f6d3d8c71555ab83d07a46fa)
 
 Vérification des conteneurs 
 
