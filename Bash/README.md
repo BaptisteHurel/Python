@@ -1,1 +1,3 @@
-Some BASH script
+# BASH
+
+## Some BASH script
