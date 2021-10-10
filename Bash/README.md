@@ -1,1 +1,1 @@
-Script BASH
+Some BASH script
