@@ -9,10 +9,13 @@ import requests # code source de la page web
 import pandas as pd
 import matplotlib.pyplot as plot
 import argparse
+import time
 
 parser = argparse.ArgumentParser()
 parser.add_argument("--number", type=int, help="Classement par saisons des meilleurs scoreurs")
 args = parser.parse_args()
+
+time.sleep(1)
 
 # Recupération du code source et placement dans une variable 'request_text'
 url = "https://fr.wikipedia.org/wiki/Liste_des_meilleurs_marqueurs_en_NBA_par_saison"
@@ -37,6 +40,7 @@ for stat in stats:
         season = stat.find("a").getText()[0]
         df = df.append(Stats.to_dict(player=player, season=season, nb_point=nb_point), ignore_index=True)
 
+#Récupere chaque saison et son nombre de points associés
 def getRank(df : pd.DataFrame, x):
     df = df.head(x)
     df = df.sort_values(by=["nb_point"], ascending=True)
@@ -45,6 +49,7 @@ def getRank(df : pd.DataFrame, x):
     plot.savefig(f"results/rank_{datetime.now.isoformat()}.png", bbox_inches="tight")
     print(df.to_dict)
 
+#Taille du classement voulu //--number pour une taille spécifique
 if args.number:
     getRank(df, args.number)
 else:
