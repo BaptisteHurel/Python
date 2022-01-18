@@ -5,6 +5,10 @@
 - Videos => https://course.fast.ai/videos/
 - Colab notebooks => https://course.fast.ai/start_colab
 
+## 0) Reminders
+### Types of machine learning
+![image](https://user-images.githubusercontent.com/58144828/149974920-2e8115c4-fe15-4a30-945b-1e73b682d6db.png)
+
 ## 1) 01_intro
 Link : https://github.com/BaptisteHurel/Python/blob/master/TP%20Fast%20AI/01_intro.ipynb
 
